@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-/* .tuto-container {
+.tuto-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,4 +31,4 @@ img {
   width: 50%;
   height: auto;
   vertical-align: middle;
-} */
+}
