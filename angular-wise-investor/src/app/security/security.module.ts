@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
 import { SecurityRoutingModule } from './security-routing.module';
 import { LoginComponent } from './login/login.component';
@@ -11,7 +12,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
   declarations: [
     LoginComponent,
     SignUpComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent ,
+    
   ],
   exports:[
     LoginComponent,
@@ -20,7 +22,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
   ],
   imports: [
     CommonModule,
-    SecurityRoutingModule
+    SecurityRoutingModule,
+    FormsModule ,
   ]
 })
 export class SecurityModule { }
