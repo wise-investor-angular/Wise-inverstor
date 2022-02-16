@@ -4,18 +4,13 @@ import { InitiateYourProjectComponent } from './initiate-your-project/initiate-y
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { InitiateYourProjectComponent } from './initiate-your-project/initiate-your-project.component';
-
-import {SecurityModule} from './security/security.module';
+import { SecurityModule } from './security/security.module';
 import { MainfeedComponent } from './mainfeed/mainfeed.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { ShareyourexperienceComponent } from './shareyourexperience/shareyourexperience.component';
 import { AdminComponent } from './admin/admin.component';
-
-
-
 
 @NgModule({
   declarations: [
@@ -24,10 +19,9 @@ import { AdminComponent } from './admin/admin.component';
     AppComponent,
     ShareyourexperienceComponent,
     MainfeedComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  
-  
+
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
