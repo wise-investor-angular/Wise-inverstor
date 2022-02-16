@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { AdminComponent } from './admin.component';
 
-describe('AdminComponent', () => {
-  let component: AdminComponent;
-  let fixture: ComponentFixture<AdminComponent>;
+import { MainfeedComponent } from './mainfeed.component';
+
+describe('MainfeedComponent', () => {
+  let component: MainfeedComponent;
+  let fixture: ComponentFixture<MainfeedComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdminComponent ]
+      declarations: [ MainfeedComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AdminComponent);
+    fixture = TestBed.createComponent(MainfeedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
