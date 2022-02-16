@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { ServeService } from '../serve.service';
+import { EmailValidator, NgForm } from '@angular/forms';
+import axios from 'axios';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,12 +12,19 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {}
   onSubmit(f: NgForm) {
-    const loginobserver = {
-      // next: (x: number) => console.log('Observer'),
-      // error: (err: Error) => console.error(err),
-    };
-    // this.securityservice.login(f.value).subscribe(loginobserver);
     console.log(f.value);
+    console.log(f.value.email);
+    console.log(f.value.password);
     console.log(f.valid);
+
+    axios
+      .post('http://localhost:3000/api/login', {
+        email: f.value.email,
+        password: f.value.password,
+      })
+      .then((data) => {
+        alert('Data Sended');
+      });
+    // return this.http.post(this.url,f);
   }
 }
