@@ -6,5 +6,5 @@ import { NavbarComponent } from './navbar/navbar.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'routing-app';
+  
 }

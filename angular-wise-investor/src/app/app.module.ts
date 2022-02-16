@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { InitiateYourProjectComponent } from './initiate-your-project/initiate-your-project.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { InitiateYourProjectComponent } from './initiate-your-project/initiate-your-project.component';
 import { SecurityModule } from './security/security.module';
 import { MainfeedComponent } from './mainfeed/mainfeed.component';
 
@@ -17,12 +16,15 @@ import { AdminComponent } from './admin/admin.component';
     AdminComponent,
     InitiateYourProjectComponent,
     AppComponent,
+
+    NavbarComponent,
+    InitiateYourProjectComponent,
     ShareyourexperienceComponent,
     MainfeedComponent,
-    NavbarComponent,
+    // HttpClientModule,
   ],
+  imports: [BrowserModule, AppRoutingModule, SecurityModule],
 
-  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
