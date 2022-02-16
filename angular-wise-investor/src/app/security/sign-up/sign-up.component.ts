@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import axios from 'axios';
 
 @Component({
   selector: 'app-sign-up',
@@ -13,5 +14,16 @@ export class SignUpComponent implements OnInit {
   onSubmit(f: NgForm) {
     console.log(f.value);
     console.log(f.valid);
+    axios
+      .post('http://localhost:3000/api/user/signUp', {
+        email: f.value.email,
+        password: f.value.password,
+        firstName :f.value.firstName,
+        lastName:f.value.lastName,
+
+      })
+      .then((data) => {
+        alert('Data Sended');
+      });
   }
 }
