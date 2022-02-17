@@ -1,5 +1,5 @@
 <div>
-  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <!-- <form #f="ngForm" (ngSubmit)="onSubmit(f)"> -->
     <label>Email :</label>
     <input type="email" name="email" ngModel required #email="ngModel" />
     <label>Password :</label>
@@ -32,11 +32,15 @@
       <label>Please accept terms and conditions</label>
     </div>
     <div class="button">
-      <button class="submit" type="submit" [disabled]="f.invalid">
+      <button class="submit" type="submit" [disabled]="f.invalid" routerLink="login">
         Sign up here
       </button>
     </div>
-  </form>
+    
+  <!-- </form> -->
+  <a class="dropdown-item" href="#" routerLink="login">logout</a>
+
 
   <!-- <p>Terms : {{ terms }}</p> -->
 </div>
+<!-- <router-outlet></router-outlet> -->
