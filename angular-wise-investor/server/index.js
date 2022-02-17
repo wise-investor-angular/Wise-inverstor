@@ -2,17 +2,12 @@ const express = require("express");
 var cors = require("cors");
 const logger = require("morgan");
 const mainfeedRoutes = require("./routes/getthefeed.routes");
-
-
-
+ 
 const itemRoutes = require("./routes/item.routes");
 const profileRoutes = require("./routes/profile");
 var User = require("./database-mongo");
 var ProfileBlog = require("./database-mongo");
 
-// TODO: Update this
-// UNCOMMENT THE DATABASE YOU'D LIKE TO USE
-// var items = require('./database-mysql');
 var tutorials = require("./database-mongo");
 
 const app = express();
@@ -37,3 +32,25 @@ app.use("/api/pr", itemRoutes);
 app.listen(PORT, function () {
   console.log("listening on port 3000!");
 });
+
+
+// /// Reset password with email 
+// const path = require('path')
+// const nodemailer = require ('nodemailer');
+// const bodyParser = require("body-parser");
+
+// /// My engine 
+// app.engine('handlebars',exphbs());
+// app.set('view engine','handlebars');
+
+// ////
+
+// app.use('/public',express.static());
+
+// ///
+// app.use(bodyParser.urlencoded({extended:false}));
+// app.use(bodyParser.json())
+
+
+
+
