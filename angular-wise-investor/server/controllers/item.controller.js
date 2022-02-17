@@ -70,6 +70,7 @@ var getFeed = function (callback) {
     }
   });
 };
+
 // delete one tutorial
 var deleteOneTuto = function (req, res) {
   Pr.findByIdAndDelete({
