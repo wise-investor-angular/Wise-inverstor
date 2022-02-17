@@ -10,6 +10,8 @@ import axios from 'axios';
 export class SignUpComponent implements OnInit {
   constructor() {}
 
+
+  
   ngOnInit(): void {}
   onSubmit(f: NgForm) {
     console.log(f.value);

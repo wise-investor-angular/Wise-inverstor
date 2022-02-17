@@ -21,7 +21,6 @@ import { AdminComponent } from './admin/admin.component';
     InitiateYourProjectComponent,
     ShareyourexperienceComponent,
     MainfeedComponent,
-    // HttpClientModule,
   ],
   imports: [BrowserModule, AppRoutingModule, SecurityModule],
 
