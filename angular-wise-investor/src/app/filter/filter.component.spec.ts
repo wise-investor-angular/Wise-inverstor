@@ -1,19 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainfeedComponent } from './mainfeed.component';
+import { FilterComponent } from './filter.component';
 
-describe('MainfeedComponent', () => {
-  let component: MainfeedComponent;
-  let fixture: ComponentFixture<MainfeedComponent>;
+describe('FilterComponent', () => {
+  let component: FilterComponent;
+  let fixture: ComponentFixture<FilterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MainfeedComponent],
-    }).compileComponents();
+      declarations: [ FilterComponent ]
+    })
+    .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainfeedComponent);
+    fixture = TestBed.createComponent(FilterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-shareyourexperience',
   templateUrl: './shareyourexperience.component.html',
-  styleUrls: ['./shareyourexperience.component.css']
+  styleUrls: ['./shareyourexperience.component.css'],
 })
 export class ShareyourexperienceComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
