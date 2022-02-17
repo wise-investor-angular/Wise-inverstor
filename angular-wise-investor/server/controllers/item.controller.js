@@ -17,7 +17,6 @@ var selectAllTutos = function (req, res) {
 
 // post one tutorial
 var postTuto = function (req, res) {
-  // console.log(req.body)
   Pr.create({
     image: req.body.image,
     title: req.body.title,
@@ -139,7 +138,7 @@ var destroy = function (website, callback) {
 };
 
 var postBlog = function (req, res) {
-console.log(req.body)
+  console.log(req.body);
   ProfileBlog.create({
     title: req.body.title,
     image: req.body.image,

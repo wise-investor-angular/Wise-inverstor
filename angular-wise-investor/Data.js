@@ -1570,6 +1570,7 @@ Read more: How Much Space Do You Need For Photo Studio?
 //   { title: "", image: "", text: "" },
 //   { title: "", image: "", text: "" },
 // // ];
+
 // var insert = () => {
 //   Pr.insertMany(project);
 // };

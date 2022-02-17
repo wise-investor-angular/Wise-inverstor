@@ -4,7 +4,7 @@ import axios from 'axios';
 @Component({
   selector: 'app-mainfeed',
   templateUrl: './mainfeed.component.html',
-  styleUrls: ['./mainfeed.component.css']
+  styleUrls: ['./mainfeed.component.css'],
 })
 export class MainfeedComponent implements OnInit {
  feeds=[]
@@ -29,4 +29,5 @@ aa(){
   console.log(this.feeds);
   
 }
+
 }
