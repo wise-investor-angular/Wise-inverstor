@@ -1,0 +1,26 @@
+#title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .parent {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #title2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #div1 {
+    grid-area: 1 / 1/ 4 / 2;
+    display: grid;
+    column-gap: 50px;
+  }
+ 
+  #sghira {
+    max-width: 20%;
+  }
