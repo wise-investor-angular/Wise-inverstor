@@ -20,7 +20,7 @@ import { FormsModule } from '@angular/forms';
     AdminComponent,
     InitiateYourProjectComponent,
     AppComponent,
-FilterComponent,
+    FilterComponent,
     NavbarComponent,
     InitiateYourProjectComponent,
     ShareyourexperienceComponent,
@@ -28,10 +28,11 @@ FilterComponent,
     FeedComponent,
     ProjectComponent,
     FilterComponent,
+  
     // HttpClientModule,
-
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, SecurityModule,FormsModule],
+  imports: [BrowserModule, AppRoutingModule, SecurityModule, FormsModule],
 
   providers: [],
   bootstrap: [AppComponent],
