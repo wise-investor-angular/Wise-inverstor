@@ -1,0 +1,42 @@
+<div>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <label>Email :</label>
+    <input type="email" name="email" ngModel required #email="ngModel" />
+    <label>Password :</label>
+    <input
+      type="password"
+      type="password"
+      name="password"
+      ngModel
+      required
+      #password="ngModel"
+    />
+    <label>firstName :</label>
+    <input
+      type="username"
+      name="username"
+      ngModel
+      required
+      #username="ngModel"
+    />
+    <label>lastName :</label>
+    <input
+      type="lastname"
+      name="lastname"
+      ngModel
+      required
+      #lastname="ngModel"
+    />
+    <div>
+      <input type="checkbox" />
+      <label>Please accept terms and conditions</label>
+    </div>
+    <div class="button">
+      <button class="submit" type="submit" [disabled]="f.invalid">
+        Sign up here
+      </button>
+    </div>
+  </form>
+
+  <!-- <p>Terms : {{ terms }}</p> -->
+</div>
