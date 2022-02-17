@@ -27,7 +27,7 @@ export class SignUpComponent implements OnInit {
       .then((data) => {
         // alert('Data Sended');
         this.isDisabled = true;
-        // this.router.navigate(['login']);
+        this.router.navigate(['login']);
       });
   }
 }

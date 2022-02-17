@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailValidator, NgForm } from '@angular/forms';
 import axios from 'axios';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,8 +9,8 @@ import axios from 'axios';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor() {}
-
+  constructor(private router: Router) {}
+  isDisabled = false;
   ngOnInit() {}
   onSubmit(f: NgForm) {
     console.log(f.value);
@@ -21,6 +22,8 @@ export class LoginComponent implements OnInit {
       })
       .then((data) => {
         // alert('Data Sended');
+        this.isDisabled = true;
+        this.router.navigate(['mainfeed']);
       });
   }
 }
