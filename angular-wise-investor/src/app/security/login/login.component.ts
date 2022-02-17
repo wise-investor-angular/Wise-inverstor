@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailValidator, NgForm } from '@angular/forms';
 import axios from 'axios';
-// import { HttpClient } from '@angular/common/http';
 
-// import { ServeService } from '../serve.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

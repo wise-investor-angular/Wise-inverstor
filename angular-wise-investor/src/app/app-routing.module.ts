@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'shareyourexperience', component: ShareyourexperienceComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
-  {path:'mainfeed', component:MainfeedComponent}
+  { path: 'mainfeed', component: MainfeedComponent },
 ];
 
 @NgModule({
