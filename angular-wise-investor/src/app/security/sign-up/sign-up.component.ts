@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class SignUpComponent implements OnInit {
   constructor(private router: Router) {}
   isDisabled = false;
+
   ngOnInit(): void {}
   onSubmit(f: NgForm) {
     console.log(f.value);
