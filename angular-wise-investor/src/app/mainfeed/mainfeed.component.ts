@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-mainfeed',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainfeed.component.css']
 })
 export class MainfeedComponent implements OnInit {
-
+ feeds=[]
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.getFeed()
   }
-
+getFeed(){
+  axios.get("http://localhost:3000/api/mainfeed/getthefeed")
+  .then(({data})=>{
+    console.log(data);
+    this.feeds=data
+    
+  })
+  .catch((err)=>{
+    console.log(err);
+    
+  })
+}
+aa(){
+  console.log(this.feeds);
+  
+}
 }
