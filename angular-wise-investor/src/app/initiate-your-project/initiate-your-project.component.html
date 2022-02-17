@@ -1,1 +1,16 @@
-<p>initiate-your-project works!</p>
+<div>
+  <input
+    type="email"
+    class="form-control"
+    id="search-text"
+    aria-describedby="search-text"
+    [(ngModel)]="searchText"
+    placeholder="Enter text to search"
+    autofocus
+  />
+  <app-project
+    *ngFor="let project of projects | appFilter: searchText"
+    [project]="project"
+  ></app-project>
+  <button (click)="console()">ALO</button>
+</div>
