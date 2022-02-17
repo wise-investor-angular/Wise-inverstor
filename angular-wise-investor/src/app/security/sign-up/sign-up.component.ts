@@ -13,13 +13,13 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {}
   onSubmit(f: NgForm) {
     console.log(f.value);
-    console.log(f.valid);
+    // console.log(f.valid);
     axios
       .post('http://localhost:3000/api/user/signUp', {
         email: f.value.email,
         password: f.value.password,
-        firstName :f.value.firstName,
-        lastName:f.value.lastName,
+        firstName :f.value.username,
+        lastName:f.value.lastname,
 
       })
       .then((data) => {
