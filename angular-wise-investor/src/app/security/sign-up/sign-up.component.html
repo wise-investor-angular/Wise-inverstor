@@ -1,13 +1,4 @@
-<div>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_ii1uikO7mDCjWaf51oJtk");
-    })();
-  </script>
+<div [attr.disabled]="isDisabled">
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <label>Email :</label>
     <input type="email" name="email" ngModel required #email="ngModel" />
@@ -41,7 +32,7 @@
       <label>Please accept terms and conditions</label>
     </div>
     <div class="button">
-      <button class="submit" type="submit" [disabled]="f.invalid">
+      <button class="submit" type="submit" routerLink='login' routerLinkActive="router-link-active" >
         Sign up here
       </button>
     </div>
