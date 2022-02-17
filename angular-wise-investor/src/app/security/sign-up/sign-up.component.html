@@ -1,4 +1,13 @@
 <div>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_ii1uikO7mDCjWaf51oJtk");
+    })();
+  </script>
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <label>Email :</label>
     <input type="email" name="email" ngModel required #email="ngModel" />
@@ -13,16 +22,16 @@
     />
     <label>firstName :</label>
     <input
-      type="username"
-      name="username"
+      type="firstName"
+      name="firstName"
       ngModel
       required
       #username="ngModel"
     />
     <label>lastName :</label>
     <input
-      type="lastname"
-      name="lastname"
+      type="lastName"
+      name="lastName"
       ngModel
       required
       #lastname="ngModel"

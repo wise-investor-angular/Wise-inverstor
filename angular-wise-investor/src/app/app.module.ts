@@ -26,6 +26,7 @@ FilterComponent,
     ProjectComponent,
     FilterComponent,
     // HttpClientModule,
+
   ],
   imports: [BrowserModule, AppRoutingModule, SecurityModule,FormsModule],
 
