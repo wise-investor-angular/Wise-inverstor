@@ -1,34 +1,12 @@
-.tuto-container {
+#bien {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-right: 2rem;
-  margin-left: 0.7rem;
-  border: solid 2px rgba(#000, 0.2);
 }
-
-.add-btn {
-  justify-content: center;
-  align-items: center;
-  margin-top: 2%;
-  margin-left: 10%;
-}
-
-.delete-btn {
-  justify-content: center;
-  align-items: center;
-  align-self: flex-end;
-  margin-right: 1px;
-  margin-bottom: 1px;
-}
-
-img {
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: auto;
-  vertical-align: middle;
+input {
+  margin-left: 500px;
+  margin-right: 100px;
+  width: 500px;
 }
