@@ -8,24 +8,25 @@ import axios from 'axios';
   styleUrls: ['./initiate-your-project.component.css'],
 })
 export class InitiateYourProjectComponent implements OnInit {
-  projects=[];
-  searchText=''
-  constructor() {
-    
-  }
+  projects = [];
+  searchText = '';
+  constructor() {}
 
   ngOnInit() {
-    this.getData()
+    this.getData();
   }
-console(){
-  console.log(this.projects)
-}
-  getData(){
-    axios.get("http://localhost:3000/api/pr/data").then(({data})=>{
-     console.log(data)
-      this.projects=data
-     }).catch((err)=>{
-        console.log(err)
-     })
-         }
+  console() {
+    console.log(this.projects);
+  }
+  getData() {
+    axios
+      .get('http://localhost:3000/api/pr/data')
+      .then(({ data }) => {
+        console.log(data);
+        this.projects = data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 }

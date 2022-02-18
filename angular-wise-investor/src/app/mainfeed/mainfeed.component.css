@@ -2,33 +2,20 @@
     font-size: 30px;
     font-weight: bold;
   }
-  .parent {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-left: 50px;
-    margin-right: 100px;
-  }
+  #bienn{
+    flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-evenly;
+display: flex;
+align-items: center;
+
+
+}
+
   #title2 {
     font-size: 20px;
     font-weight: bold;
   }
-  #div1 {
-    grid-area: 1 / 1 / 4 / 2;
-  }
-  #div2 {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  #div3 {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  #div4 {
-    grid-area: 3 / 2 / 4 / 3;
-  }
-  #sghira {
-    max-width: 20%;
-  }
+ 
 
   
