@@ -12,17 +12,17 @@ margin-right: 50px;
       height: 7cm;
   }
   #allora{
-/* display: flex;  */
+display: flex; 
 
 
 
 
   }
   .parent {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
-    grid-row-gap: 50px; */
+    grid-row-gap: 50px;
   }
  
