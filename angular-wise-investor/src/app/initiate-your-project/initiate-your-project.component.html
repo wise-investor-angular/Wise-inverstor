@@ -8,10 +8,12 @@
     placeholder="Enter text to search"
     autofocus
   />
-  <app-project
-    *ngFor="let project of projects | appFilter: searchText"
+  <div id="bien"
+  >
+  <app-project     *ngFor="let project of projects | appFilter: searchText"
     [project]="project"
   ></app-project>
   <button (click)="console()">ALO</button>
+</div>
 
 </div>

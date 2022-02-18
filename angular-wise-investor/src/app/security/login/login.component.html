@@ -1,4 +1,4 @@
-<div>
+<div [attr.disabled]="isDisabled">
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <label>Email :</label>
     <input type="email" name="email" ngModel required #email="ngModel" />
@@ -11,7 +11,7 @@
       #password="ngModel"
     />
     <div class="button">
-      <button class="submit"  type="submit">Log in</button>
+      <button class="submit" type="submit" routerLink="mainfeed" routerLinkActive="router-link-active" >Log in</button>
     </div>
   </form>
 </div>

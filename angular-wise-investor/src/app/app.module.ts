@@ -9,6 +9,8 @@ import { FilterComponent } from './filter/filter.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ShareyourexperienceComponent } from './shareyourexperience/shareyourexperience.component';
 import { AdminComponent } from './admin/admin.component';
+import { FeedComponent } from './feed/feed.component';
+
 import { ProjectComponent } from './project/project.component';
 import { FormsModule } from '@angular/forms';
 
@@ -18,17 +20,19 @@ import { FormsModule } from '@angular/forms';
     AdminComponent,
     InitiateYourProjectComponent,
     AppComponent,
-FilterComponent,
+    FilterComponent,
     NavbarComponent,
     InitiateYourProjectComponent,
     ShareyourexperienceComponent,
     MainfeedComponent,
+    FeedComponent,
     ProjectComponent,
     FilterComponent,
+  
     // HttpClientModule,
-
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, SecurityModule,FormsModule],
+  imports: [BrowserModule, AppRoutingModule, SecurityModule, FormsModule],
 
   providers: [],
   bootstrap: [AppComponent],
