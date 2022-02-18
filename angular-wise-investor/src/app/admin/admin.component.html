@@ -9,11 +9,13 @@
     placeholder="Enter text to search"
     autofocus
   />
+  <div id="bien">
   <app-admins
     *ngFor="let project of projects | appFilter: searchText"
     [project]="project"
   >
 </app-admins>
+</div>
   <!-- <button (click)="console()">ALO</button> -->
 
 </div>
