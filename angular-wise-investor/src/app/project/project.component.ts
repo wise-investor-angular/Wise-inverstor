@@ -18,21 +18,10 @@ myBudget=0
   }
   bysearch() {
     console.log(this.projects)
-    // var x = parseInt(this.search);
-    // if (isNaN(x) == false) {
-    //   return this.projects.filter((elem) => {
-    //     return elem.budget < parseInt(this.search);
-    //   });
-    // } else {
-    //   return this.projects.filter((elem) => {
-    //     return elem.field.toLowerCase().match(this.search.toLowerCase());
-    //   });
-    // }
+    
   }
   byBudget() {
-    // return this.projects.filter((elem) => {
-    //   return elem.budget < this.myBudget;
-    // });
+
   }
 
 sarah(){

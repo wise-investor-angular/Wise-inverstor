@@ -1,4 +1,5 @@
 <div>
+
   <input
     type="email"
     class="form-control"
@@ -8,12 +9,11 @@
     placeholder="Enter text to search"
     autofocus
   />
-  <div id="bien"
-  >
-  <app-project     *ngFor="let project of projects | appFilter: searchText"
-    [project]="project"
-  ></app-project>
-  <button (click)="console()">ALO</button>
-</div>
-
+  <div id="bien">
+    <app-project
+      *ngFor="let project of projects | appFilter: searchText"
+      [project]="project"
+    ></app-project>
+    <button (click)="console()">ALO</button>
+  </div>
 </div>
