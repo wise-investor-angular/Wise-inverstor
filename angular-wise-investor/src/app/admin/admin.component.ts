@@ -1,31 +1,47 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { ProjectComponent } from '../project/project.component';
 import axios from 'axios';
-import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
 })
 export class AdminComponent implements OnInit {
+  projects = [];
+  searchText = '';
   constructor() {}
-  ngOnInit(): void {}
-  onSubmit(f: NgForm) {
-    console.log(f.value);
-    // console.log(f.valid);
+
+  ngOnInit() {
+    this.getData();
+  }
+  console() {
+    console.log(this.projects);
+  }
+  getData() {
     axios
-      .post('http://localhost:3000/api/pr/tutorial', {
-        image: f.value.image,
-        title: f.value.title,
-        budget: f.value.budget,
-        field: f.value.field,
-        tutorial: f.value.tutorial,
+      .get('http://localhost:3000/api/pr/data')
+      .then(({ data }) => {
+        console.log(data);
+        this.projects = data;
       })
-      .then((data) => {
-        alert('Data Sended');
-        // this.isDisabled = true;
-        // this.router.navigate(['login']);
+      .catch((err) => {
+        console.log(err);
       });
   }
-
+  handleDelete(id: any) {
+    axios
+      .delete(`http://localhost:3000/api/tutorial/del/${id}`)
+      .then((response) => {
+        console.log(response);
+        location.reload();
+      });
+  }
 }
+
+// @Component({
+//   selector: 'app-admin',
+//   templateUrl: './admin.component.html',
+//   styleUrls: ['./admin.component.css'],
+// })

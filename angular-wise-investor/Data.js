@@ -1581,7 +1581,7 @@ Read more: How Much Space Do You Need For Photo Studio?
 //   Pr.insertMany(project);
 // };
 // insert();
-var insert = () => {
-  Feed.insertMany(feed);
-};
-insert();
+// var insert = () => {
+//   Feed.insertMany(feed);
+// };
+// insert();
