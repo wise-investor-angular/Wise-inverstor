@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { filter } from 'rxjs/operators';
 // import 'rxjs/add/operator/filter';
 import { InitiateYourProjectComponent } from '../initiate-your-project/initiate-your-project.component';
+import axios from 'axios';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
@@ -23,8 +24,14 @@ myBudget=0
   byBudget() {
 
   }
+  handleDelete(id: any) {
+    axios
+      .delete(`http://localhost:3000/api/tutorial/del/${id}`)
+      .then((response) => {
+        console.log(response);
+        location.reload();
+      });
+  } 
+}
 
-sarah(){
-  alert("wachbik metghachech")
-}
-}
+
