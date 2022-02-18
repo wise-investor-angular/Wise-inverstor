@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-feed',
@@ -12,5 +13,4 @@ export class FeedComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

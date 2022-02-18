@@ -8,8 +8,7 @@
             <h3 class="card-text">{{ project.field }}</h3>
             <h3 class="card-text">{{ project.budget + "$" }}</h3>
             <button     class="btn btn-dark btn-rounded" (click)="bysearch()">CLICK ME!!!!!</button>
-        </div>
+            <button (click)="handleDelete(project._id)">delete</button>
     </div>
   </div>
-</div>
- 
+</div>      
