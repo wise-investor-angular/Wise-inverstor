@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { ProjectComponent } from '../project/project.component';
 import axios from 'axios';
+
 
 @Component({
   selector: 'app-admin',
@@ -11,6 +12,8 @@ import axios from 'axios';
 export class AdminComponent implements OnInit {
   projects = [];
   searchText = '';
+  // @Input() projects: any;
+@Input()project: any;
   constructor() {}
 
   ngOnInit() {
