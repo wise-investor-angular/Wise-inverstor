@@ -1,17 +1,18 @@
 <div>
-  <button type="button" class="add-btn btn btn-outline-primary">
-    Add new Tutorial
-  </button>
-  <ul>
-    <li class="tuto-container shadow-lg p-3 mb-5 bg-white rounded">
-      <h2 class="tuto-title"></h2>
-      <img
-        class="tuto-img"
-        src="https://img.freepik.com/photos-gratuite/portrait-jeune-famille_1328-3806.jpg?size=626&ext=jpg"
-      />
-      <p class="tuto-content"></p>
-      <h6 class="tuto-budget">The Budget :</h6>
-      <button class="delete-btn btn btn-outline-danger">Delete Tuto</button>
-    </li>
-  </ul>
+  <input
+    type="email"
+    class="form-control"
+    id="search-text"
+    aria-describedby="search-text"
+    [(ngModel)]="searchText"
+    placeholder="Enter text to search"
+    autofocus
+  />
+  <app-project
+    *ngFor="let project of projects | appFilter: searchText"
+    [project]="project"
+  >
+</app-project>
+  <button (click)="console()">ALO</button>
+
 </div>
