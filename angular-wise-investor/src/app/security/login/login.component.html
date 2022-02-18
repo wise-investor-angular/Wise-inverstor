@@ -1,54 +1,22 @@
-<div>
+<div id="all2">
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-    <label>Email :</label>
-    <input type="email" name="email" ngModel required #email="ngModel" />
-    <label>Password :</label>
-    <input
-      type="password"
-      name="password"
-      ngModel
-      required
-      #password="ngModel"
-    />
+    <h1>Login in</h1>
+    <p>
+      <label>Email :</label>
+      <input type="email" name="email" ngModel required #email="ngModel" />
+    </p>
+    <p>
+      <label>Password :</label>
+      <input
+        type="password"
+        name="password"
+        ngModel
+        required
+        #password="ngModel"
+      />
+    </p>
     <div class="button">
       <button class="submit" type="submit" routerLink="mainfeed">Log in</button>
-
     </div>
   </form>
 </div>
-
-<!-- <script>
-  import axios from "axios";
-  export default {
-    data() {
-      return {
-        email: "",
-        password: "",
-        firstName: "",
-        lastName: "",
-      };
-    },
-    methods: {
-      handleSubmit() {
-        var login = {
-          email: this.email,
-          password: this.password,
-        };
-        this.$router.push({ name: "InvestorFeed" });
-
-        axios
-          .post("http://localhost:3000/api/user/login", login)
-          .then((response) => {
-            console.log(response.data);
-            this.$store.commit("setAuthentication", true);
-            this.user = response.data;
-            localStorage.setItem("user", JSON.stringify(this.user));
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      },
-    },
-  };
-
-<script/> -->
