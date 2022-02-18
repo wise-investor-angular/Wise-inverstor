@@ -21,8 +21,9 @@ select {
   width: 100%;
   box-sizing: bordre-box;
   border: none;
-  border-bottom: 1px solid #ddd;
-  color: #555;
+  border-bottom: 1px solid rgb(8, 8, 8);
+  color: rgb(8, 8, 8);
+  
 }
 
 input[type="checkbox"] {
@@ -67,7 +68,7 @@ input[type="checkbox"] {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   background: rgb(0 0 0 / 8%) url(/images/classy_fabric.png);
 }
 
@@ -133,7 +134,7 @@ input[type="password"],
 input[type="firstName"] {
   width: 100%;
   padding: 8px 5px;
-  background: linear-gradient(#1f2124, #27292c);
+  background: linear-gradient(#f8fafd, #e1e2e6);
   border: 1px solid #222;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   border-radius: 0.3em;
