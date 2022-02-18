@@ -14,6 +14,7 @@ import { FeedComponent } from './feed/feed.component';
 import { ProjectComponent } from './project/project.component';
 import { FormsModule } from '@angular/forms';
 import { AdminsComponent } from './admins/admins.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { AdminsComponent } from './admins/admins.component';
     ProjectComponent,
     FilterComponent,
     AdminsComponent,
+    AboutusComponent,
   
     // HttpClientModule,
     

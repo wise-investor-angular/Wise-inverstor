@@ -7,6 +7,7 @@ import { MainfeedComponent } from './mainfeed/mainfeed.component';
 import { SignUpComponent } from './security/sign-up/sign-up.component';
 import { LoginComponent } from './security/login/login.component';
 import { ShareyourexperienceComponent } from './shareyourexperience/shareyourexperience.component';
+import {AboutusComponent} from './aboutus/aboutus.component'
 const routes: Routes = [
   { path: 'admin', component: AdminComponent },
   { path: 'initiate project', component: InitiateYourProjectComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'mainfeed', component: MainfeedComponent },
+  {path:'aboutus',component: AboutusComponent}
 ];
 
 @NgModule({
