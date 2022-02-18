@@ -1,22 +1,31 @@
 <div id="all2">
-  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-    <h1>Login in</h1>
-    <p>
-      <label>Email :</label>
-      <input type="email" name="email" ngModel required #email="ngModel" />
-    </p>
-    <p>
-      <label>Password :</label>
-      <input
-        type="password"
-        name="password"
-        ngModel
-        required
-        #password="ngModel"
-      />
-    </p>
-    <div class="button">
-      <button class="submit" type="submit" routerLink="mainfeed">Log in</button>
-    </div>
-  </form>
+  <div [attr.disabled]="isDisabled">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <h1>Login in</h1>
+      <p>
+        <label>Email :</label>
+        <input type="email" name="email" ngModel required #email="ngModel" />
+      </p>
+      <p>
+        <label>Password :</label>
+        <input
+          type="password"
+          name="password"
+          ngModel
+          required
+          #password="ngModel"
+        />
+      </p>
+      <div class="button">
+        <button
+          class="submit"
+          type="submit"
+          routerLink="mainfeed"
+          routerLinkActive="router-link-active"
+        >
+          Log in
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
