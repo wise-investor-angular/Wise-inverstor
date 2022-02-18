@@ -1,5 +1,6 @@
 <div [attr.disabled]="isDisabled">
-  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)"(submit)="sendEmail($event)">
     <label>Email :</label>
     <input type="email" name="email" ngModel required #email="ngModel" />
     <label>Password :</label>
@@ -32,7 +33,12 @@
       <label>Please accept terms and conditions</label>
     </div>
     <div class="button">
-      <button class="submit" type="submit" routerLink='login' routerLinkActive="router-link-active" >
+      <button
+        class="submit"
+        type="submit"
+        routerLink="login"
+        routerLinkActive="router-link-active"
+      >
         Sign up here
       </button>
     </div>
