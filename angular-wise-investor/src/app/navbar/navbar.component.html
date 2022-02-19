@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">THE WISE INVESTOR</a>
+  <label>
+    <a class="navbar-brand" href="#">THE WISE INVESTOR</a>
+  </label>
   <button
     class="navbar-toggler"
     type="button"
@@ -16,27 +18,15 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#" routerLink="mainfeed"
-          >investor feed <span class="sr-only">(current)</span></a
+          >INVESTOR FEED <span class="sr-only">(current)</span></a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" routerLink="initiate project"
+        <a class="nav-link" id="hello" href="#" routerLink="initiate project"
           >INITIATE YOUR PROJECT</a
         >
       </li>
-      <form class="form-inline my-2 my-lg-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-          
-          
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
+      <form class="form-inline my-2 my-lg-0"></form>
       <li class="nav-item dropdown">
         <a
           class="nav-link dropdown-toggle"
@@ -47,19 +37,28 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          settings
+          Settings
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" routerLink="shareyourexperience"
-            >share your point ov view!</a
+
+        <div class="dropdown-menu" id="dev" aria-labelledby="navbarDropdown">
+          <a
+            class="dropdown-item"
+            href="#"
+            routerLink="shareyourexperience"
+            id="sha"
+            >Share your point ov view!</a
           >
-          <a class="dropdown-item" href="#" routerLink="aboutus">About us</a>
+          <a class="dropdown-item" href="#" routerLink="aboutus" id="about"
+            >About us</a
+          >
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" routerLink="login">logout</a>
+          <a class="dropdown-item" href="#" routerLink="login" id="log"
+            >logout</a
+          >
         </div>
       </li>
     </ul>
   </div>
-  <a href="#" routerLink="signup">i</a>
+  <a href="#" routerLink="signup" id="i">i</a>
 </nav>
 <router-outlet></router-outlet>

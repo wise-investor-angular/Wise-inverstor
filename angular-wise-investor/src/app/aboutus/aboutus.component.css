@@ -4,9 +4,24 @@
   font-weight: 50;
   margin-left: 100px;
   margin-right: 100px;
+  font-family: system-ui;
+  color: aliceblue;
 }
 #titre {
   font-weight: 500;
   font-size: 70px;
   text-align: center;
+  font-family: system-ui;
+  margin-top: -50px;
+  color: aliceblue;
 }
+
+#goal {
+  background-size: 100%;
+  background-image: url("./img1.jpg");
+}
+
+/* .card-img-top{
+  width: 25px;
+  border
+} */
