@@ -1,53 +1,32 @@
-<div [attr.disabled]="isDisabled">
-  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-    <label>Email :</label>
-    <input type="email" name="email" ngModel required #email="ngModel" />
-    <label>Password :</label>
-    <input
-      type="password"
-      name="password"
-      ngModel
-      required
-      #password="ngModel"
-    />
-    <div class="button">
-      <button class="submit" type="submit" routerLink="mainfeed" routerLinkActive="router-link-active" >Log in</button>
-    </div>
-  </form>
+<div id="all2">
+  <div [attr.disabled]="isDisabled">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <h1>Login in</h1>
+      <p>
+        <label>Email :</label>
+        <input type="email" name="email" ngModel required #email="ngModel" />
+      </p>
+      <p>
+        <label>Password :</label>
+        <input
+          type="password"
+          name="password"
+          ngModel
+          required
+          #password="ngModel"
+        />
+      </p>
+      <div class="box">
+        <a (click)="Forgetpassword()">Forgot password ?</a>
+        <button
+          class="submit"
+          type="submit"
+          routerLink="mainfeed"
+          routerLinkActive="router-link-active"
+        >
+          Log in
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
-
-<!-- <script>
-  import axios from "axios";
-  export default {
-    data() {
-      return {
-        email: "",
-        password: "",
-        firstName: "",
-        lastName: "",
-      };
-    },
-    methods: {
-      handleSubmit() {
-        var login = {
-          email: this.email,
-          password: this.password,
-        };
-        this.$router.push({ name: "InvestorFeed" });
-
-        axios
-          .post("http://localhost:3000/api/user/login", login)
-          .then((response) => {
-            console.log(response.data);
-            this.$store.commit("setAuthentication", true);
-            this.user = response.data;
-            localStorage.setItem("user", JSON.stringify(this.user));
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      },
-    },
-  };
-
-<script/> -->

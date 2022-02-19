@@ -1,39 +1,40 @@
 form {
-    max-width: 600px;
-    margin: 30px auto;
-    background: #fff;
-    text-align: left;
-    padding: 20px;
-    border-radius: 10px;
-  }
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  color: #aaa;
+  display: inline-block;
+  margin: 25px 0 15px;
+  text-transform: uppercase;
+}
+
+input,
+select {
+  display: block;
+  padding: 10px 6px;
+  width: 100%;
+  box-sizing: bordre-box;
+  border: none;
+  border-bottom: 1px solid rgb(8, 8, 8);
+  color: rgb(8, 8, 8);
   
-  label {
-    color: #aaa;
-    display: inline-block;
-    margin: 25px 0 15px;
-    text-transform: uppercase;
-  }
-  
-  input,
-  select {
-    display: block;
-    padding: 10px 6px;
-    width: 100%;
-    box-sizing: bordre-box;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    color: #555;
-  }
-  
-  input[type="checkbox"] {
-    display: inline-block;
-    width: 16px;
-    margin: 0 10px 0;
-    position: relative;
-    top: 2px;
-  }
-  
-  .pill {
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 16px;
+  margin: 0 10px 0;
+  position: relative;
+  top: 2px;
+}
+
+/* .pill {
     display: inline-block;
     margin: 20px 10px 0 0;
     padding: 6px 12px;
@@ -41,24 +42,165 @@ form {
     font-size: 12px;
     cursor: pointer;
     background: #eee;
-  }
-  
-  button {
+  } */
+
+/* button {
     background: rgb(7, 24, 7);
     border: 0;
     padding: 10px 20px;
     color: white;
     border-radius: 20px;
-  }
-  
-  .submit {
+  } */
+
+/* .submit {
     text-align: center;
-  }
-  
-  .error {
+  } */
+
+/* .error {
     color: #ff0000;
     margin-top: 10px;
     font-size: 0.8em;
     font-weight: bold;
-  }
-  
+  } */
+
+@import "compass/css3";
+#all {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+  font-size: 15px;
+  background: rgb(0 0 0 / 8%) url(/images/classy_fabric.png);
+}
+
+form {
+  background: #111;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 0.4em;
+  border: 1px solid #191919;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+  left: -15px;
+}
+
+form:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  border-radius: 50%;
+  left: 34%;
+  top: -7px;
+  box-shadow: 0 0 6px 4px #fff;
+}
+
+form h1 {
+  font-size: 18px;
+  text-shadow: 0 1px 0 black;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  position: relative;
+}
+form h1:after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  pointer-events: none;
+  transform: rotate(70deg);
+  background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+label {
+  color: #666;
+  display: block;
+  padding-bottom: 9px;
+}
+
+input[type="text"],
+input[type="password"],
+[type="email"],
+[type="lastName"],
+input[type="firstName"] {
+  width: 100%;
+  padding: 8px 5px;
+  background: linear-gradient(#f8fafd, #e1e2e6);
+  border: 1px solid #222;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 0.3em;
+  margin-bottom: 20px;
+}
+
+label[for="remember"] {
+  color: white;
+  display: inline-block;
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.p-container {
+  padding: 0 20px 20px 20px;
+}
+
+.p-container:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.p-container span {
+  display: block;
+  float: left;
+  color: #0d93ff;
+  padding-top: 8px;
+}
+
+button {
+  padding: 5px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 10px 10px rgba(255, 255, 255, 0.1);
+  border-radius: 0.3em;
+  background: #0184ff;
+  color: white;
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -10px 10px rgba(255, 255, 255, 0.1);
+}
+
+button:hover,
+input[type="password"]:hover,
+label:hover ~ input[type="text"],
+label:hover ~ input[type="password"] {
+  background: #27292c;
+}
+label:hover ~ input[type="email"] {
+  background: #27292c;
+}
+label:hover ~ input[type="lastName"] {
+  background: #27292c;
+}
+label:hover ~ input[type="firstName"] {
+  background: #27292c;
+}

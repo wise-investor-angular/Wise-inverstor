@@ -1,48 +1,66 @@
-<div [attr.disabled]="isDisabled">
-  
-  <form #f="ngForm" (ngSubmit)="onSubmit(f)"(submit)="sendEmail($event)">
-    <label>Email :</label>
-    <input type="email" name="email" ngModel required #email="ngModel" />
-    <label>Password :</label>
-    <input
-      type="password"
-      type="password"
-      name="password"
-      ngModel
-      required
-      #password="ngModel"
-    />
-    <label>firstName :</label>
-    <input
-      type="firstName"
-      name="firstName"
-      ngModel
-      required
-      #username="ngModel"
-    />
-    <label>lastName :</label>
-    <input
-      type="lastName"
-      name="lastName"
-      ngModel
-      required
-      #lastname="ngModel"
-    />
-    <div>
-      <input type="checkbox" />
-      <label>Please accept terms and conditions</label>
-    </div>
-    <div class="button">
-      <button
-        class="submit"
-        type="submit"
-        routerLink="login"
-        routerLinkActive="router-link-active"
-      >
-        Sign up here
-      </button>
-    </div>
-  </form>
+<div id="all">
+  <div [attr.disabled]="isDisabled">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" (submit)="sendEmail($event)">
+      <h1>Sign Up</h1>
+      <p>
+        <label>Email :</label>
+        <input type="email" name="email" ngModel required #email="ngModel" />
+      </p>
+      <p>
+        <label>Password :</label>
+        <input
+          type="password"
+          type="password"
+          name="password"
+          ngModel
+          required
+          #password="ngModel"
+        />
+      </p>
+      <p>
+        <label>firstName :</label>
+        <input
+          type="firstName"
+          name="firstName"
+          ngModel
+          required
+          #username="ngModel"
+        />
+      </p>
+      <p>
+        <label>lastName :</label>
+        <input
+          type="lastName"
+          name="lastName"
+          ngModel
+          required
+          #lastname="ngModel"
+        />
+      </p>
+      <div>
+        <input type="checkbox" />
+        <label>Please accept terms and conditions</label>
+      </div>
+      <div class="button">
+        <p class="p-container">
+          <!-- <a href="url" >Forgot password ?</a> -->
+          <!-- <a href="#" id="link">Forgot password ?</a> -->
 
-  <!-- <p>Terms : {{ terms }}</p> -->
+          <br />
+          <br />
+          <br />
+          <button
+            class="submit"
+            type="submit"
+            routerLink="login"
+            routerLinkActive="router-link-active"
+          >
+            Sign up here
+          </button>
+        </p>
+      </div>
+    </form>
+
+    <!-- <p>Terms : {{ terms }}</p> -->
+  </div>
 </div>

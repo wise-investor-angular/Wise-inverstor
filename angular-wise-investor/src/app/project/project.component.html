@@ -1,15 +1,20 @@
-<br><br>
-<div class="parent centerdiv"></div>
-<div class="card" id="allora" style="width: 40rem">
+<br />
+<br />
+<div id="look">
+  <div class="parent centerdiv"></div>
+  <div class="card" id="allora" style="width: 40rem">
     <div class="a">
-        <div id="yes">
+      <div id="yes">
         <img class="card-img-top" id="taswira" src="{{ project.image }}" />
         <div class="card-body">
-            <h2>{{ project.title }}</h2>
-            <h3 class="card-text">{{ project.field }}</h3>
-            <h3 class="card-text">{{ project.budget + "$" }}</h3>
-            <button     class="btn btn-dark btn-rounded" (click)="bysearch()">open tutorial</button>   
+          <h2>{{ project.title }}</h2>
+          <h3 class="card-text">{{ project.field }}</h3>
+          <h3 class="card-text">{{ project.budget + "$" }}</h3>
+          <button class="btn btn-dark btn-rounded" (click)="bysearch()">
+            Open tutorial
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-    
